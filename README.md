@@ -4,61 +4,18 @@
 - Data Source: Spotify API
 - Type of analysis: K-NN Recommender
 
-# Startup the project
 
-The initial setup.
+# Medium article
 
-Create virtualenv and install the project:
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv ~/venv ; source ~/venv/bin/activate ;\
-    pip install pip -U; pip install -r requirements.txt
-```
+[Read more here](https://medium.com/@griggio.federico/discover-new-songs-with-music-similarity-c650ca5f5bea)
 
-Add spotipy credentials as environment variables:
-```bash
-export SPOTIPY_CLIENT_ID='123...abc'
-export SPOTIPY_CLIENT_SECRET='456...def'
-```
 
-Unittest test:
-```bash
-make clean install test
-```
+# Our webapp
 
-Check for music_similarity in gitlab.com/{group}.
-If your project is not set please add it:
+[Try the webapp here](https://music-similarity-anffoy276a-uc.a.run.app/)
 
-- Create a new project on `gitlab.com/{group}/music_similarity`
-- Then populate it:
-
-```bash
-##   e.g. if group is "{group}" and project_name is "music_similarity"
-git remote add origin git@github.com:{group}/music_similarity.git
-git push -u origin master
-git push -u origin --tags
-```
-
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-music_similarity-run
-```
 
 # Install
-
-Go to `https://github.com/{group}/music_similarity` to see the project, manage issues,
-setup you ssh public key, ...
-
-Create a python3 virtualenv and activate it:
-
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
-```
 
 Clone the project and install it:
 
